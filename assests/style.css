@@ -15,8 +15,8 @@
 /* Body Style */
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--primary-green); /* Green background */
-    color: var(--neutral-white); /* White text */
+    background: linear-gradient(135deg, var(--primary-green) 50%, var(--secondary-yellow) 100%); /* Green to Yellow Gradient */
+    color: var(--neutral-white);
 }
 
 /* Navbar */
@@ -114,23 +114,11 @@ a:hover {
 
 /* Additional Section Styling */
 #about, #academics, #admissions, #gallery, #contact {
-    background-color: var(--neutral-white); /* White sections */
+    background-color: var(--neutral-white); /* White background for sections */
     color: var(--primary-green); /* Green text */
 }
 
 /* Special Section Design */
-section {
-    padding: 60px 20px;
-    background-color: var(--primary-green); /* Green background for all sections */
-    color: var(--neutral-white); /* White text */
-}
-
-section h2 {
-    font-size: 2em;
-    color: var(--secondary-yellow); /* Yellow for section headings */
-}
-
-/* Mixed Section with Gradient */
 section#gallery {
     background: linear-gradient(135deg, var(--primary-green) 60%, var(--secondary-yellow) 100%); /* Green to Yellow Gradient */
     color: var(--neutral-white);
