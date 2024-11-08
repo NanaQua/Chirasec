@@ -1,9 +1,49 @@
-/* admissions form styling */
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar */
+header nav {
+    background-color: #006400; /* Dark Green */
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #006400; /* Green */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Yellow Accent */
+h1, h2 {
+    color: #FFD700; /* Yellow */
+}
+
+/* Admissions Form Styling */
 #admissionForm, #admissionStatus {
     margin: 20px 0;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #006400;
     border-radius: 8px;
 }
 
@@ -20,16 +60,16 @@
     border-radius: 4px;
 }
 
-button[type="submit"], .button-link, #admissionStatus button {
+button[type="submit"], #admissionStatus button, .button-link {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #006400;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-/* Gallery styling */
+/* Gallery Styling */
 .gallery-images {
     display: flex;
     gap: 10px;
