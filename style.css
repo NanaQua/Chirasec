@@ -1,67 +1,112 @@
-/* Color Theme */
+/* assets/css/style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define main colors based on the school logo */
 :root {
-    --primary-green: #4CAF50;
-    --secondary-yellow: #FFC107;
-    --text-white: #FFFFFF;
-    --text-dark: #333333;
+    --primary-green: #006400; /* Adjust this shade of green as needed */
+    --secondary-yellow: #FFD700; /* Adjust this shade of yellow as needed */
+    --neutral-white: #FFFFFF;
 }
 
-/* Header Styling */
-header {
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
     background-color: var(--primary-green);
-    color: var(--text-white);
-    padding: 1rem;
-    text-align: center;
+    color: var(--neutral-white);
 }
 
-header nav ul li a {
-    color: var(--text-white);
+/* Navbar */
+header nav {
+    background-color: var(--primary-green);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: var(--neutral-white);
+    text-decoration: none;
     font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
 }
 
-header nav ul li a:hover {
-    color: var(--secondary-yellow);
+header nav a:hover {
+    background-color: var(--secondary-yellow);
+    color: var(--primary-green);
 }
 
 /* Hero Section */
-#home {
-    background: url('../images/school-hero.jpg') no-repeat center center/cover;
-    color: var(--text-white);
-    padding: 5rem 0;
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-green) 60%, var(--secondary-yellow) 100%);
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--neutral-white);
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+/* Section Style */
+section {
+    padding: 60px 20px;
     text-align: center;
 }
 
-#home h1 {
-    font-size: 3rem;
-    color: var(--secondary-yellow);
-}
-
-#home p {
-    font-size: 1.5rem;
-    color: var(--text-white);
-}
-
-/* Section Headings */
 section h2 {
-    color: var(--primary-green);
-    border-bottom: 3px solid var(--secondary-yellow);
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+    font-size: 2em;
+    color: var(--secondary-yellow);
+    margin-bottom: 20px;
 }
 
-/* Button Styling */
-button, .button-link {
-    background-color: var(--primary-green);
-    color: var(--text-white);
-    padding: 0.75rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
-button:hover, .button-link:hover {
+/* Button Link Style */
+.button-link {
     background-color: var(--secondary-yellow);
-    color: var(--text-dark);
+    color: var(--primary-green);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: var(--neutral-white);
+    color: var(--primary-green);
+}
+
+/* Footer Section */
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--secondary-yellow);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--neutral-white);
 }
