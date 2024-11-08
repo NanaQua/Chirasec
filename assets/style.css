@@ -4,81 +4,84 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #fff; /* White background */
 }
 
 /* Navbar */
 header nav {
     background-color: #006400; /* Dark Green */
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 header nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
 }
 
 header nav ul li a {
+    color: #fff; /* White text */
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
+    padding: 8px 12px;
+}
+
+header nav ul li a:hover {
+    background-color: #FFD700; /* Yellow on hover */
+    color: #006400; /* Green text on hover */
+    border-radius: 5px;
 }
 
 /* Hero Section */
-.hero-section {
-    background-color: #006400; /* Green */
-    color: #fff;
-    padding: 50px 20px;
+#home {
+    background-color: #006400; /* Green background */
+    color: #fff; /* White text */
+    padding: 60px 20px;
     text-align: center;
 }
 
-/* Yellow Accent */
-h1, h2 {
+#home h1 {
+    font-size: 2.5em;
     color: #FFD700; /* Yellow */
 }
 
-/* Admissions Form Styling */
-#admissionForm, #admissionStatus {
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #fff;
-    border: 2px solid #006400;
-    border-radius: 8px;
+#home p {
+    font-size: 1.2em;
+    color: #fff; /* White */
 }
 
-#admissionForm label, #admissionStatus label {
-    display: block;
-    margin: 8px 0 4px;
+/* Section Headings */
+section h2 {
+    color: #006400; /* Green text */
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-#admissionForm input, #admissionStatus input, #admissionForm textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 4px 0 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* Section Paragraphs */
+section p {
+    font-size: 1em;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
 }
 
-button[type="submit"], #admissionStatus button, .button-link {
-    padding: 10px 20px;
-    background-color: #006400;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* About, Academics, Admissions, Gallery, Contact Sections */
+section {
+    padding: 40px 20px;
 }
 
-/* Gallery Styling */
-.gallery-images {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.gallery-images img {
+/* Gallery Section Images (Optional) */
+#gallery img {
     width: 150px;
     height: 100px;
-    object-fit: cover;
+    margin: 10px;
     border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }

@@ -4,103 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHIRASEC - Chirano Community Day Senior High School</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- Navbar -->
     <header>
-        <nav style="background-color: #006400; color: #fff;"> <!-- Dark Green Navbar -->
-            <!-- Logo Image -->
-            <img src="assets/images/chirasec-logo.png" alt="CHIRASEC Logo" style="height: 50px; vertical-align: middle;">
+        <nav>
             <ul>
-                <li><a href="#home" style="color: #fff;">Home</a></li>
-                <li><a href="#about" style="color: #fff;">About Us</a></li>
-                <li><a href="#academics" style="color: #fff;">Academics</a></li>
-                <li><a href="#admissions" style="color: #fff;">Admissions</a></li>
-                <li><a href="#gallery" style="color: #fff;">Gallery</a></li>
-                <li><a href="#contact" style="color: #fff;">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section" style="background-color: #006400; color: #fff;"> <!-- Green background -->
+    <section id="home">
         <h1>Welcome to CHIRASEC</h1>
-        <p>Chirano Community Day Senior High School</p>
-        <p style="color: #FFD700; font-weight: bold;">Western North Region, Ghana</p> <!-- Yellow accent text -->
+        <p>Chirano Community Day Senior High School, Western North Region</p>
     </section>
 
     <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>CHIRASEC is dedicated to academic excellence and character development. Our mission is to shape young minds for a brighter future through quality education and a supportive environment.</p>
+        <p>Learn about our history, mission, and achievements.</p>
     </section>
 
     <!-- Academics Section -->
     <section id="academics">
         <h2>Academics</h2>
-        <p>Explore our diverse programs, extracurricular activities, and the support services available to help every student succeed.</p>
-        <button class="button-link" onclick="window.location.href='#admissions'">Learn More</button>
+        <p>Explore our programs and student support services.</p>
     </section>
 
     <!-- Admissions Section -->
     <section id="admissions">
         <h2>Admissions</h2>
-        <p>We welcome students from diverse backgrounds who are eager to learn and grow. Fill out the form below to apply.</p>
-
-        <!-- Admission Application Form -->
-        <form id="admissionForm">
-            <h3>Admission Application Form</h3>
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
-
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required>
-
-            <label for="previousSchool">Previous School:</label>
-            <input type="text" id="previousSchool" name="previousSchool" required>
-
-            <label for="grade">BECE Grade:</label>
-            <input type="text" id="grade" name="grade" required>
-
-            <label for="parentDetails">Parent/Guardian Details:</label>
-            <textarea id="parentDetails" name="parentDetails" required></textarea>
-
-            <button type="submit">Submit Application</button>
-        </form>
-
-        <!-- Admission Status Check -->
-        <div id="admissionStatus">
-            <h3>Check Admission Status</h3>
-            <label for="checkName">Enter Your Full Name:</label>
-            <input type="text" id="checkName" name="checkName">
-            <button onclick="checkAdmissionStatus()">Check Status</button>
-            <p id="statusMessage"></p>
-        </div>
+        <p>Find out how to apply and join CHIRASEC.</p>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery">
         <h2>Gallery</h2>
-        <p>Take a glimpse into life at CHIRASEC. Our gallery showcases campus events, student activities, and more moments from our vibrant community.</p>
-        <div class="gallery-images">
-            <img src="https://via.placeholder.com/150?text=CHIRASEC+1" alt="CHIRASEC Campus Image 1">
-            <img src="https://via.placeholder.com/150?text=CHIRASEC+2" alt="CHIRASEC Campus Image 2">
-            <img src="https://via.placeholder.com/150?text=CHIRASEC+3" alt="CHIRASEC Campus Image 3">
-            <img src="https://via.placeholder.com/150?text=CHIRASEC+4" alt="CHIRASEC Campus Image 4">
-            <!-- Replace placeholders with actual images from Google -->
-        </div>
+        <p>Discover moments from life at CHIRASEC.</p>
     </section>
 
     <!-- Contact Us Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Visit us in Chirano, Western North Region, Ghana. We’re here to answer your questions about admissions, academics, and more.</p>
-        <address>
-            <strong>Address:</strong> Chirano Community Day Senior High School, Western North Region, Ghana<br>
-            <strong>Email:</strong> <a href="mailto:info@chirasec.edu.gh">info@chirasec.edu.gh</a><br>
-            <strong>Phone:</strong> +233 0598771704
-        </address>
+        <p>Visit us in Chirano, Western North Region, Ghana</p>
     </section>
 
     <script src="assets/js/script.js"></script>
