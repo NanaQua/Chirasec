@@ -1,5 +1,3 @@
-/* assets/css/style.css */
-
 /* Basic Reset */
 * {
     margin: 0;
@@ -9,8 +7,8 @@
 
 /* Define main colors based on the school logo */
 :root {
-    --primary-green: #006400; /* Adjust this shade of green as needed */
-    --secondary-yellow: #FFD700; /* Adjust this shade of yellow as needed */
+    --primary-green: #006400; /* Adjust this shade of green if needed */
+    --secondary-yellow: #FFD700; /* Adjust this shade of yellow if needed */
     --neutral-white: #FFFFFF;
 }
 
@@ -110,3 +108,14 @@ a {
 a:hover {
     color: var(--neutral-white);
 }
+
+/* Additional Styling for Sections */
+#about, #academics, #admissions, #gallery, #contact {
+    background-color: var(--neutral-white);
+    color: var(--primary-green);
+}
+
+section h2 {
+    color: var(--primary-green);
+}
+
