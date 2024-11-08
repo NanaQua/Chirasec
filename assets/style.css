@@ -1,0 +1,67 @@
+/* Color Theme */
+:root {
+    --primary-green: #4CAF50;
+    --secondary-yellow: #FFC107;
+    --text-white: #FFFFFF;
+    --text-dark: #333333;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-green);
+    color: var(--text-white);
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: var(--text-white);
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-yellow);
+}
+
+/* Hero Section */
+#home {
+    background: url('../images/school-hero.jpg') no-repeat center center/cover;
+    color: var(--text-white);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: var(--secondary-yellow);
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: var(--text-white);
+}
+
+/* Section Headings */
+section h2 {
+    color: var(--primary-green);
+    border-bottom: 3px solid var(--secondary-yellow);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Styling */
+button, .button-link {
+    background-color: var(--primary-green);
+    color: var(--text-white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button:hover, .button-link:hover {
+    background-color: var(--secondary-yellow);
+    color: var(--text-dark);
+}
